@@ -1,5 +1,5 @@
 # LaTeX-USQ-assignment
-LaTeX template for USQ assignments
+LaTeX template for USQ assignments.
 
 # To generate the .PDF
 Run LaTeX twice to get the correct LastPage.
