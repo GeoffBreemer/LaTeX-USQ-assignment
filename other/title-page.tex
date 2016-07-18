@@ -1,0 +1,31 @@
+\thispagestyle{empty}
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 	% create horizontal rule command with 1 argument of height
+\makeatletter 								% allows access to \@title and \@author
+\begin{center}
+\horrule{0.5pt} \\[0.2cm]
+\huge
+\textbf{\usqcoursecode{} \usqcoursedescription{}}
+
+\vspace{0.5cm}
+\Large
+\@title
+
+\vspace{0.2cm}
+\small
+\@date{}
+\textbullet \ Semester \usqacademicsemester{}, \usqacademicyear{}
+
+
+\horrule{2pt} \\[0.2cm]
+	
+\normalsize
+\@author{}
+\textbullet \ \usqstudentnumber{}
+\textbullet \ \usqstudentemail{}
+
+\vspace{0.5cm
+}
+\normalsize
+
+\end{center}
+\makeatother

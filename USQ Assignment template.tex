@@ -1,64 +1,38 @@
-\documentclass[a4paper, fontsize=12pt]{scrartcl} % A4 paper and 11pt font size
-\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
-\usepackage[english]{babel} % English language/hyphenation
-\usepackage{fancyhdr} % Custom headers and footers
+\documentclass[a4paper, 12pt, notitlepage]{article} 	% A4 paper and 11pt font size
+\usepackage[T1]{fontenc}						% font encoding to support proper hyphenation, PDF copy/paste etc.
+\usepackage[english]{babel} 					% English language/hyphenation
+\usepackage{fancyhdr} 						% custom headers and footers
+\usepackage{hyperref}						% clickable references
+\usepackage{lastpage}						% to determine the number of pages
+\usepackage{graphicx}
 
-\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
-\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
-\fancyfoot[L]{} % Empty left footer
-\fancyfoot[C]{} % Empty center footer
-\fancyfoot[R]{\thepage} % Page numbering for right footer
-\renewcommand{\headrulewidth}{0pt} % Remove header underlines
-\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
-\setlength{\headheight}{13.6pt} % Customize the height of the header
+% Document settings
+\input{settings/page-settings}					% Page settings (header, footer etc.)
+\graphicspath{ {images/} } 						% Set the path where images are stored.
 
-\setlength\parindent{0pt} 			% Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+% To generate the .PDF run LaTeX twice to get the correct LastPage
+% Subfolders used by this document:
+% - 'content': regularly edited text, e.g. introduction, chapters, conclusion and recommendations
+% - 'images': all image files
+% - 'other': all "one-off" text, e.g. title page
+% - 'settings': page settings
 
 % Personal settings
 \newcommand{\usqcoursecode}{MAT8190}
 \newcommand{\usqcoursedescription}{Numerical Computation}
-\newcommand{\usqtitle}{Assignment 1 submission}
-\newcommand{\usqsubtitle}{Selected exercises:\\Exercise 3.4 (Chapter 3) and exercise 7.5 (Chapter 7)}
+\title{Assignment 1}
 \author{Geoffry Breemer}
 \newcommand{\usqstudentnumber}{0061082147}
 \newcommand{\usqstudentemail}{u1082147@umail.usq.edu.au}
 \newcommand{\usqacademicyear}{2016}
 \newcommand{\usqacademicsemester}{2}
 \date{31 July 2016}
-\newcommand{\usqpreparedfor}{Dr Harry Butler}
-\newcommand{\usqpreparedforposition}{Senior Lecturer (Mathematics and Computing)}
-\newcommand{\usqpreparedfororganisation}{School of Agricultural, Computational and Environmental Sciences}
-
-% Title
-\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
-
-\title{	
-\normalfont \normalsize 
-\textsc{university, school or department name} \\ [25pt] % Your university, school and/or department name(s)
-\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
-\huge \usqtitle \\ % The assignment title
-\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
-}
-
-\author{Geoffry Breemer} % Your name
-
-\date{\normalsize\today} % Today's date or a custom date
 
 % Start of the document
 \begin{document}
-\maketitle % Print the title
 
-\section{Problem title}
-Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
-
-\subsection{Heading on level 2 (subsection)}
-Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-
-\subsubsection{Heading on level 3 (subsubsection)}
-blablabla blabla
-
-\section{Lists}
-
-\subsection{Example of list (3*itemize)}
+\input{other/title-page}
+\input{content/question1}
+\input{content/question2}
 
 \end{document}
