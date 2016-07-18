@@ -1,0 +1,8 @@
+\makeatletter 								% allows access to \@title and \@author
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\@title}
+\fancyfoot[R]{\thepage\ of \pageref{LastPage}}
+\makeatother
