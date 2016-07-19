@@ -1,8 +1,17 @@
 \makeatletter 								% allows access to \@title and \@author
 \setlength{\headheight}{15.2pt}
+
+% Page style for the title page: no header, but with page numbers
+\fancypagestyle{plain}{
+\fancyhf{}
+\input{settings/pagenumber-settings}
+}
+
+% Page style for all other pages
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\leftmark}
 \fancyhead[R]{\@title}
 \input{settings/pagenumber-settings}
+   
 \makeatother
