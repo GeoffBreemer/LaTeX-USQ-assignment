@@ -1,0 +1,22 @@
+% Style and command for MATLAB code
+\lstdefinestyle{matlabSt}{
+showstringspaces=false,
+frame={tb},
+lineskip=-1pt,
+extendedchars=false,
+basicstyle=\scriptsize\ttfamily,
+commentstyle=\scriptsize\ttfamily,
+numbers=left,
+stepnumber=1,
+numberstyle=\tiny,
+xleftmargin=2em,
+language=Matlab,
+breaklines
+}
+
+\newcommand{\MatlabLst}[3]{%
+\lstinputlisting[%
+caption={#2},%
+label={#3},%
+style=matlabSt]{#1}%
+}
