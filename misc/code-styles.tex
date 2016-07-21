@@ -1,4 +1,4 @@
-% Style and command for MATLAB code
+% MATLAB Style and command definition
 \lstdefinestyle{matlabSt}{
 showstringspaces=false,
 frame={tb},
@@ -20,3 +20,24 @@ caption={#2},%
 label={#3},%
 style=matlabSt]{#1}%
 }
+
+% Pseudo code language definition
+\lstdefinelanguage{pseudo}{
+morekeywords={for, for all, while, do, end, if, then, else, return, divides, min, max, require, ensure, print},
+sensitive=false,
+mathescape=true,
+escapechar=`}
+
+% Pseudo code style definition
+\lstdefinestyle{pseudoSt}{
+language=pseudo,
+basicstyle=\rmfamily,
+keywordstyle=\bfseries,
+columns=[l]fullflexible,    
+showstringspaces=false,
+numbers=left,       
+numberstyle=\footnotesize,
+tabsize=2,
+aboveskip={0pt},
+belowskip={0pt},
+frame=lines}

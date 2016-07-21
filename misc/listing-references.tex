@@ -1,0 +1,49 @@
+% Code styles are defined in code-styles.tex
+\DeclareNewFloatType{algorithm}{name=Algorithm, placement=htbp, within=section}
+\DeclareNewFloatType{codefragment}{name=Code fragment, placement=htbp,within=section}
+
+\floatsetup[algorithm]{style=plaintop}
+\floatsetup[codefragment]{style=plaintop}
+%\floatsetup[table]{style=plaintop}				% Optional
+
+% EXAMPLES BELOW EXAMPLES BELOW EXAMPLES BELOW EXAMPLES BELOW 
+
+% Example algorithm:
+% ====================================
+
+%\begin{algorithm}
+%\caption{Compute $N!$.}
+%\label{alg:myalgorithm}
+%\begin{lstlisting}[style=pseudoSt]
+%$z \gets 1$ 
+%for $k\in[1,\dotsc,N]$ do
+%    $z \gets z\cdot k$
+%return $z$
+%\end{lstlisting}
+%\end{algorithm}
+
+% Example code fragment using inline code:
+% ====================================
+
+%\begin{codefragment}
+%\caption{Compute $N!$, C++ implementation.}
+%\label{alg:myprogram}
+%\begin{lstlisting}[style=matlabSt]
+%a = 1
+%\end{lstlisting}
+%\end{codefragment}
+
+% Example code fragment using an imported file:
+% ====================================
+
+%\begin{codefragment}
+%\caption{Compute $N!$, C++ implementation.}
+%\label{alg:myprogram}
+%\lstinputlisting[style=matlabSt]{enter path to code file}
+%\end{codefragment}
+
+% Include a List of Algorithms/Code fragments:
+% ====================================
+
+% \listof{algorithm}{List of Algorithms}
+% \listof{codefragment}{List of Code fragments}
