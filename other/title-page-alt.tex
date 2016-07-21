@@ -1,0 +1,40 @@
+\begin{titlepage}
+\makeatletter 								% allows access to \@title and \@author
+\newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
+\center
+
+\textsc{\LARGE University of Southern Queensland}\\[1.5cm] % Name of your university/college
+\textsc{\Large \usqcoursecode}\\[0.5cm]
+\textsc{\large \usqcoursedescription}\\[0.5cm]
+
+\HRule \\[0.4cm]
+{\huge \bfseries \@title}\\[0.4cm]
+\HRule \\[1.5cm]
+ 
+\vfill
+\begin{flushleft} \normalsize
+\textbf{Author}
+
+\@author
+
+Student number: \usqstudentnumber
+
+Email: \usqstudentemail
+
+\vspace{0.5cm}
+\normalsize
+\textbf{Prepared for} \\
+\usqpreparedfor
+
+\usqpreparedforposition
+
+\usqpreparedfororganisation
+
+\vspace{0.5cm}
+{\normalsize \@date{}}
+
+Semester \usqacademicsemester, \usqacademicyear
+\end{flushleft}
+
+\makeatother
+\end{titlepage}
