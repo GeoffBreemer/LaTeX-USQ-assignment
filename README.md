@@ -10,3 +10,8 @@ Run LaTeX twice to get the correct value for `LastPage`.
 - `misc`: code style definitions
 - `other`: all "one-off" text, e.g. title page
 - `settings`: page settings
+
+# Word count
+Run texcount:
+
+`texcount -v -inc -nobib "name of main tex file.tex"`
