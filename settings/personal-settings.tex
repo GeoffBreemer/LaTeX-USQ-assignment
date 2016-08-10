@@ -10,3 +10,11 @@
 \newcommand{\usqpreparedfor}{Dr Harry Butler}
 \newcommand{\usqpreparedforposition}{Senior Lecturer (Mathematics and Computing)}
 \newcommand{\usqpreparedfororganisation}{School of Agricultural, Computational and Environmental}
+\makeatletter
+\hypersetup
+{
+  pdftitle   =  \usqcoursecode{} \usqcoursedescription,
+  pdfsubject = \@title,
+  pdfauthor  = \@author
+}
+\makeatother
