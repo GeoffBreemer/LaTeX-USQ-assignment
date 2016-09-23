@@ -14,12 +14,16 @@
 \usepackage{listings}						% for including code listings
 \usepackage[font=small,format=plain,labelsep=period, labelfont=bf, justification = centerlast]{caption}
 \usepackage{floatrow}
+\usepackage{rotating}						% rotate large tables
+\usepackage[titletoc]{appendix}					% show "Appendix" in the TOC
+\usepackage{amssymb}						% symbols
 
 % Document settings
 \input{settings/page-settings}					% page settings (header, footer etc.)
 \graphicspath{ {images/} } 						% set the path where images are stored.
 \input{misc/listing-references}					% correct listing \autoref
 \input{misc/code-styles}						% styles for source code
+\floatsetup[table]{capposition=top}				% table captions above the table
 
 % Personal settings
 \input{settings/personal-settings}
